@@ -1,6 +1,6 @@
-const content = document.querySelector('#content');
-
 function pageLoad() {
+	const content = document.querySelector('#content');
+
 	const homeHeader = document.createElement('h1');
 	homeHeader.id = 'restaurant-name';
 	homeHeader.textContent = "Monsieur Murr's";
