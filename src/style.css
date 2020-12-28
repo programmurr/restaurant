@@ -11,6 +11,7 @@ body {
 	line-height: 1;
 }
 
+/* Only looks good in half size */
 #content {
 	display: grid;
 	grid-template-columns: 1fr;
@@ -19,6 +20,7 @@ body {
 	align-items: center;
 }
 
+/* This image blows up on full screen */
 img {
 	max-width: 40%;
 	height: auto;
