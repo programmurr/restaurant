@@ -11,21 +11,25 @@ body {
 	line-height: 1;
 }
 
+#tabs {
+	cursor: pointer;
+}
+
 /* Only looks good in half size */
-#content {
+/* #content {
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: 1fr 3fr 1.5fr;
 	justify-items: center;
 	align-items: center;
-}
+} */
 
 /* This image blows up on full screen */
-img {
+/* img {
 	max-width: 40%;
 	height: auto;
 }
 
 p {
 	text-align: center;
-}
+} */
