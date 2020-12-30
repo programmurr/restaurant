@@ -1,6 +1,6 @@
 function homePage() {
 	const baguettesPhoto = document.createElement('img');
-	baguettesPhoto.src = '../src/baguette.jpeg';
+	baguettesPhoto.src = 'baguette.jpeg';
 	baguettesPhoto.alt = 'Image of Lovely Bread';
 
 	const homeText = document.createElement('p');
