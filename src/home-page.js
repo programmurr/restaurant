@@ -1,35 +1,6 @@
 function homePage() {
-	const content = document.querySelector('#content');
-	content.innerHTML = '';
+	content.children[2].innerHTML = '';
 
-	const homeHeader = document.createElement('h1');
-	homeHeader.id = 'restaurant-name';
-	homeHeader.textContent = "Monsieur Murr's";
-
-	// Tabs
-	const tabsDiv = document.createElement('div');
-	tabsDiv.id = 'tabs';
-
-	const homeTab = document.createElement('div');
-	homeTab.className = 'tab';
-	homeTab.id = 'home-tab';
-	homeTab.textContent = 'Home';
-
-	const menuTab = document.createElement('div');
-	menuTab.className = 'tab';
-	menuTab.id = 'menu-tab';
-	menuTab.textContent = 'Menu';
-
-	const contactTab = document.createElement('div');
-	contactTab.className = 'tab';
-	contactTab.id = 'contact-tab';
-	contactTab.textContent = 'Contact';
-
-	tabsDiv.appendChild(homeTab);
-	tabsDiv.appendChild(menuTab);
-	tabsDiv.appendChild(contactTab);
-
-	// Content
 	const baguettesPhoto = document.createElement('img');
 	baguettesPhoto.src = '../src/baguette.jpeg';
 	baguettesPhoto.alt = 'Image of Lovely Bread';
@@ -42,10 +13,11 @@ function homePage() {
             all you need to do is sit back, relax, and let us put snails in your mouth.
 			`;
 
-	content.appendChild(homeHeader);
-	content.appendChild(tabsDiv);
-	content.appendChild(baguettesPhoto);
-	content.appendChild(homeText);
+	content.children[2].appendChild(baguettesPhoto);
+	content.children[2].appendChild(homeText);
+
+	// return { baguettesPhoto, homeText };
+	// Is this better JS? So then module is not 'reaching out' and is isolated?
 }
 
 export { homePage };
