@@ -15,6 +15,23 @@ body {
 	cursor: pointer;
 }
 
+.fa {
+	padding: 20px;
+	font-size: 30px;
+	width: 17px;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 50%;
+}
+
+.fa:hover {
+	opacity: 0.7;
+}
+
+.fa-facebook {
+	background: #3b5998;
+	color: white;
+}
 /* Only looks good in half size */
 /* #content {
 	display: grid;

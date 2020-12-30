@@ -1,6 +1,4 @@
 function homePage() {
-	content.children[2].innerHTML = '';
-
 	const baguettesPhoto = document.createElement('img');
 	baguettesPhoto.src = '../src/baguette.jpeg';
 	baguettesPhoto.alt = 'Image of Lovely Bread';
@@ -13,11 +11,7 @@ function homePage() {
             all you need to do is sit back, relax, and let us put snails in your mouth.
 			`;
 
-	content.children[2].appendChild(baguettesPhoto);
-	content.children[2].appendChild(homeText);
-
-	// return { baguettesPhoto, homeText };
-	// Is this better JS? So then module is not 'reaching out' and is isolated?
+	return { baguettesPhoto, homeText };
 }
 
 export { homePage };
