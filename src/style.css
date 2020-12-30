@@ -9,13 +9,101 @@
 body {
 	font-family: Arial, Helvetica, sans-serif;
 	line-height: 1;
+	height: 100%;
+	background: linear-gradient(90deg, #ffc3cd 50%, #a6fcfc 50%);
+}
+
+#content {
+	display: grid;
+	justify-items: center;
+	align-items: center;
+}
+
+h1 {
+	font-size: 2rem;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	text-align: center;
 }
 
 #tabs {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
 	cursor: pointer;
+	width: 60%;
+	background-color: white;
+	border: 1px solid black;
 }
 
+.tab {
+	padding-bottom: 10px;
+	padding-top: 10px;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+.tab:hover {
+	background-color: black;
+	color: white;
+}
+
+#sub-content {
+	display: grid;
+	justify-items: center;
+	align-items: center;
+	background-color: white;
+	width: 60%;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+h2 {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-size: large;
+}
+
+/* Home Page */
+
+img {
+	padding-top: 20px;
+	width: 50%;
+}
+
+p {
+	width: 100%;
+	margin: 1rem 1rem 1rem 1rem;
+	text-align: center;
+}
+
+/* Menu Page */
+ul {
+	list-style: none;
+	text-align: center;
+}
+
+li {
+	padding-top: 5px;
+}
+
+#dessert-meringue {
+	padding-bottom: 30px;
+}
+#main-header {
+	padding-top: 15px;
+}
+
+#dessert-header {
+	padding-top: 15px;
+}
+
+/* Content Page */
+
 .fa {
+	margin-top: 10px;
+	margin-bottom: 10px;
 	padding: 20px;
 	font-size: 30px;
 	width: 17px;
@@ -32,21 +120,3 @@ body {
 	background: #3b5998;
 	color: white;
 }
-/* Only looks good in half size */
-/* #content {
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: 1fr 3fr 1.5fr;
-	justify-items: center;
-	align-items: center;
-} */
-
-/* This image blows up on full screen */
-/* img {
-	max-width: 40%;
-	height: auto;
-}
-
-p {
-	text-align: center;
-} */

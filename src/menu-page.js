@@ -51,7 +51,7 @@ function menuPage() {
 	dessertHeader.textContent = 'Sorbet';
 
 	const dessertList = document.createElement('ul');
-	dessertList.id = 'main-list';
+	dessertList.id = 'dessert-list';
 	dessertList.className = 'menu';
 
 	const meringue = document.createElement('li');
